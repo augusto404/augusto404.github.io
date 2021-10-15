@@ -1,2 +1,2 @@
 # Meu-Primeiro-Site
-Um experimento pessoal. Meu primeiro site.
+Estou fazendo esse site conforme assisto o curso de HTML do curso em vídeo.
