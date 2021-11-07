@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
 body {
-    text-align: justify;
+    text-align: justify, center;
     font-family: 'Courier New', Courier, monospace
 }
 
+div {
+    align-items: center;
+}
