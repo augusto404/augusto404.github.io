@@ -1,10 +1,7 @@
 @charset "UTF-8";
 
 body {
-    text-align: justify, center;
+    text-align: justify;
+    font-size: 2em;
     font-family: 'Courier New', Courier, monospace
-}
-
-div {
-    align-items: center;
 }
