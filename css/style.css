@@ -10,8 +10,9 @@
 }
 
 h1 {
-    font-weight: bold;
+    font-weight: lighter;
     font-family: 'Press Start 2P', monospace;
+    font-size: 2em;
 }
 
 ul {
