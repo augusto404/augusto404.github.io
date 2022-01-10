@@ -9,7 +9,7 @@ body {
     text-align: center;
 }
 
-h1 {
+header {
     font-weight: lighter;
     font-family: 'Press Start 2P', monospace;
 }
@@ -45,12 +45,12 @@ ul {
     margin: 20px;
 }
 
-.footer {
+footer {
     display: flex;
     justify-content: center;
     margin: 20px;
 }
 
-.footer > div {
+footer > div {
     margin: 10px;
 }
