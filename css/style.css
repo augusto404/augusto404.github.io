@@ -4,39 +4,60 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
 :root {
     /* Paleta de cores padrão. */
-    --cor0: ;
-    --cor1: ;
-    --cor2: ;
+    --cor0: #6D7426;
+    --cor1: #89944B;
+    --cor2: #C1C493;
+    --cor3: #E5DFBA;
 
     /* Fontes padrões. */
-    --fonte-destaque: 'Press Start 2P', monospace ;
-    --fonte-conteudo: 'Source Code Pro', monospace ;
+    --fonte-destaque: 'Share Tech Mono', monospace;
+    --fonte-conteudo: 'Fira Code', monospace;
+    font-weight: normal;
 }
 
-/*
-* {
-    padding: 0px;
+/* * {
     margin: 0px;
+    padding: 0px;
+} */
+
+body {
+    /*
+    background-image: radial-gradient(var(--cor3), var(--cor2), var(--cor1), var(--cor0));
+    */
 }
-*/
 
 header {
+    /* Mudar a fonte destaque para uma mais responsiva. */
     font-family: var(--fonte-destaque);
-    font-weight: lighter;
+    font-size: 1em;
+    margin: 0px;
 }
 
-main, header {
+body, main, header {
+    font-weight: lighter;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 30px;
 }
 
 main {
-    /* Colocar uma cor de fundo e deixar o main como um quadrado com bordas arredondadas. */
     font-family: var(--fonte-conteudo);
+    max-width: 1000px;
+
+    background-color: #C1C493;
+    
+    margin: 20px;
+    padding: 20px;
 }
 
 #foto {
@@ -52,14 +73,15 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     
-    background-color: lightgray;
+    background-color: white;
 
     border-radius: 30px;
     padding: 20px;
+    margin-bottom: 20px
 }
 
 .perfil:hover {
-    background-image: linear-gradient(to right, #6D7426, #89944B, #C1C493, #E5DFBA);
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1), var(--cor2), var(--cor3));
     color: white;
 }
 
@@ -73,14 +95,13 @@ abbr {
 }
 
 .github {
-    margin: 30px;
     text-align: center;
 }
 
 footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: baseline;
 }
 
 footer > div {
