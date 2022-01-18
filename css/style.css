@@ -4,53 +4,85 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
-body {
-    font-family: 'Source Code Pro', monospace;
-    text-align: center;
+:root {
+    /* Paleta de cores padrão. */
+    --cor0: ;
+    --cor1: ;
+    --cor2: ;
+
+    /* Fontes padrões. */
+    --fonte-destaque: 'Press Start 2P', monospace ;
+    --fonte-conteudo: 'Source Code Pro', monospace ;
 }
+
+/*
+* {
+    padding: 0px;
+    margin: 0px;
+}
+*/
 
 header {
+    font-family: var(--fonte-destaque);
     font-weight: lighter;
-    font-family: 'Press Start 2P', monospace;
 }
 
-ul {
-    list-style: none;
+main, header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    /* Colocar uma cor de fundo e deixar o main como um quadrado com bordas arredondadas. */
+    font-family: var(--fonte-conteudo);
 }
 
 #foto {
     width: 140px;
+    color: white;
     background-color: black;
-    color: #FFF;
     border-radius: 50%;
 }
 
 .perfil {
     display: flex;
     text-align: left;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
     background-color: lightgray;
 
-    width: max-content;
-
     border-radius: 30px;
-    margin: auto;
     padding: 20px;
 }
 
 .perfil:hover {
-    background-image: linear-gradient(to right, rgba(250, 128, 114, 0.507), rgba(0, 0, 255, 0.479));
+    background-image: linear-gradient(to right, #6D7426, #89944B, #C1C493, #E5DFBA);
+    color: white;
 }
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+abbr {
+    text-decoration: none;
+}
+
 .github {
-    margin: 20px;
+    margin: 30px;
+    text-align: center;
 }
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 20px;
 }
 
 footer > div {
-    margin: 10px;
+    margin: 0px 20px 0px 20px;
 }
