@@ -12,10 +12,10 @@
 
 :root {
     /* Paleta de cores padrão. */
-    --cor0: #6D7426;
-    --cor1: #89944B;
-    --cor2: #C1C493;
-    --cor3: #E5DFBA;
+    --cor0: #273D40;
+    --cor1: #567073;
+    --cor2: #70898C;
+    --cor3: #AABFBF;
 
     /* Fontes padrões. */
     --fonte-destaque: 'Share Tech Mono', monospace;
@@ -23,40 +23,46 @@
     font-weight: normal;
 }
 
-/* * {
-    margin: 0px;
-    padding: 0px;
-} */
-
-body {
-    /*
-    background-image: radial-gradient(var(--cor3), var(--cor2), var(--cor1), var(--cor0));
-    */
-}
-
+/* Tirar o sublinhado dos links */
 header {
-    /* Mudar a fonte destaque para uma mais responsiva. */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     font-family: var(--fonte-destaque);
-    font-size: 1em;
-    margin: 0px;
+    max-width: 800px;
+    margin: auto;
 }
 
-body, main, header {
-    font-weight: lighter;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
+header a {
+    text-align: center;
+    text-decoration: none;
+
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--cor0);
+}
+
+header a:hover {
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1), var(--cor2), var(--cor3));
+    color: white;
 }
 
 main {
-    font-family: var(--fonte-conteudo);
-    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-    background-color: #C1C493;
-    
-    margin: 20px;
+    font-family: var(--fonte-conteudo);
+    background-color: var(--cor2);
+
+    border-radius: 30px;
+    width: 800px;
+    margin: auto;
     padding: 20px;
 }
 
@@ -69,13 +75,14 @@ main {
 
 .perfil {
     display: flex;
-    text-align: left;
     justify-content: center;
     flex-wrap: wrap;
     
+    text-align: left;
     background-color: white;
 
-    border-radius: 30px;
+    max-width: 800px;
+    border-radius: 20px;
     padding: 20px;
     margin-bottom: 20px
 }
@@ -95,15 +102,24 @@ abbr {
 }
 
 .github {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
     text-align: center;
 }
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
+.github:hover {
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1), var(--cor2), var(--cor3));
+    color: white;
 }
 
-footer > div {
-    margin: 0px 20px 0px 20px;
+.github img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Colocar isso em letras pequenas e grudado no final da página. */
+footer {
+    display: none;
 }
