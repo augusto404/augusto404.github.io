@@ -23,7 +23,6 @@
     font-weight: normal;
 }
 
-/* Tirar o sublinhado dos links */
 header {
     display: flex;
     justify-content: space-between;
