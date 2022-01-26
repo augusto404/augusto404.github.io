@@ -52,7 +52,7 @@ main {
 
     font-family: var(--fonte-conteudo);
 
-    background-image: url(../midia/background.jpg);
+    background-image: url(../midia/backgrounds/background05.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
