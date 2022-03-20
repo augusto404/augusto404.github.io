@@ -32,7 +32,7 @@ body {
     align-items: center;
     min-height: 100vh;
 
-    background-image: url(../midia/backgrounds/background02.jpg);
+    background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--cor0);
