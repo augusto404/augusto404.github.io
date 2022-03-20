@@ -1,30 +1,111 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+/* Mudar essa fonte para uma de codigo */
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
 
 :root {
     /* Paleta de cores padrão. */
     --cor0: #273D40;
     --cor1: #567073;
+    --blur1: #56707357;
     --cor2: #70898C;
     --cor3: #AABFBF;
+    --blur3: #aabfbf49;
 
     /* Fontes padrões. */
     --fonte-destaque: 'Share Tech Mono', monospace;
-    --fonte-conteudo: 'Work Sans', sans-serif;
+    --fonte-conteudo: 'Source Code Pro', monospace;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+    background-image: url(../midia/backgrounds/background02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--cor0);
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     font-family: var(--fonte-destaque);
-    max-width: 800px;
-    margin: auto;
+    color: var(--cor3);
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.644);;
+    margin: 50px;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    
+    height: 340px;
+    width: 600px;
+    border-radius: 15px;
+
+    font-family: var(--fonte-conteudo);
+    background-color: var(--blur1);
+    backdrop-filter: blur(8px);
+}
+
+#perfil {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 10px;
+}
+
+#pfp {
+    width: 150px;
+    height: 150px;
+    border: 10px solid var(--blur3);
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+#sobre {
+    align-self: center;
+    padding: 10px 15px;
+    font-size: small;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.767);
+    background-color: var(--blur3);
+}
+
+#links {
+    text-align: center;
+    margin: 20px;
+}
+
+#links > a {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    
+    color: var(--cor3);
+    background-color: var(--cor2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.274);
+}
+
+#links > a:hover {
+    color: white;
+    background-color: var(--cor3);
+    transition: 0.3s;
+}
+
+
+/* ---------------------------- 
 
 header a {
     text-align: center;
@@ -121,8 +202,4 @@ abbr {
     justify-content: center;
     align-items: center;
 }
-
-/* Colocar isso em letras pequenas e grudado no final da página. */
-footer {
-    display: none;
-}
+*/
