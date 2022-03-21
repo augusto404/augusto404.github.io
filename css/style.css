@@ -32,25 +32,29 @@ body {
     align-items: center;
     min-height: 100vh;
 
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: var(--cor0);
+    background: var(--cor0) url(../img/background.jpg) center/cover no-repeat;
 }
 
 header {
     font-family: var(--fonte-destaque);
-    color: var(--cor3);
+    font-size: 1rem;
+    text-align: center;
     text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.644);;
+
+    color: var(--cor3);
     margin: 50px;
 }
 
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
-    height: 340px;
-    width: 600px;
+    padding: 10px;
+    min-height: 340px;
+    max-width: 600px;
+    
     border-radius: 15px;
 
     font-family: var(--fonte-conteudo);
@@ -61,13 +65,12 @@ main {
 #perfil {
     display: flex;
     justify-content: space-around;
-    padding: 30px;
     margin: 10px;
 }
 
 #pfp {
-    width: 150px;
-    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
     border: 10px solid var(--blur3);
     border-radius: 50%;
     margin-right: 30px;
@@ -76,6 +79,7 @@ main {
 #sobre {
     align-self: center;
     padding: 10px 15px;
+    width: 80%;
     font-size: small;
     border-radius: 8px;
     color: rgba(255, 255, 255, 0.767);
