@@ -1,0 +1,43 @@
+/* 700px // 425 */
+@media (max-width: 700px){
+    header {
+        font-size: 70%;
+    }
+
+    main {
+        background: none;
+        backdrop-filter: none;
+        height: 70vh;
+        width: 90%;
+        padding: 30px;
+        max-width: 425px;
+    }
+
+    #perfil {
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    #pfp {
+        max-width: 100px;
+        max-height: 100px;
+        margin: 10px;
+    }
+
+    #sobre {
+        width: 90%;
+        margin: 10px;
+        font-size: 80%;
+    }
+
+    #links {
+        margin: 10px;
+    }
+
+    #links > a {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        font-size: 70%;
+    }
+}
